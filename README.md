@@ -45,3 +45,8 @@ https://freemusicarchive.org/genre/Breakcore_-_Hard
     - ^ result of above: https://imgur.com/a/qQ4rrp5 like damn its hilarious
 
 - Find a way to get download links (Part 2):
+    - Strip plain HTML of everything but the normalized song titles
+    - This regex matches all segments like !1: <a href="https://freemusicarchive.org/music/[^\n]*\n[^\n]*\n</a>
+    - VSCode doesnt have proper text processing capabilities, and our team is too lazy to learn how to invert a regex (to erase everything except these segments), so programming time
+    - => extract_titles.py
+    
