@@ -75,7 +75,7 @@ https://freemusicarchive.org/genre/Breakcore_-_Hard
 
 - Addressing attribution (Part 2):
     - To automate the metadata fetching and extraction, another piece of software must be employed
-    - => extract_song_metadata.py @ COMMIT_NUM
+    - => extract_song_metadata.py @ 188d08668d5909a354bcdb7525729ea0c12e987d
     - The first iteration cannot find the metadata of some songs (probably because they dont have any), these have to be reported and corrected by hand
     - The simplest method for this is just removing those songs altogether
 
