@@ -10,3 +10,4 @@
 - 2:04:35 all songs (except one) downloaded (this time i overshot)
 - 2:07:30 orange juice break ~5 mins
 - 2:14:00 back from orange juice break
+- 2:42:45 stream ended

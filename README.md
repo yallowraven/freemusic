@@ -1,6 +1,6 @@
 # Free music
 
-DISCLAIMER: This is a scatterbrained clump of notes corresponding to the following stream: {STREAM_LINK}
+DISCLAIMER: This is a scatterbrained clump of notes corresponding to a stream at https://www.twitch.tv/yallowraven
 
 ## Requirements
 1. Music playlist that is as long as possible
