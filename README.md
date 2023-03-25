@@ -1,5 +1,7 @@
 # Free music
 
+DISCLAIMER: This is a scatterbrained clump of notes corresponding to the following stream: {STREAM_LINK}
+
 ## Requirements
 1. Music playlist that is as long as possible
 2. Must consist of CC licensed music
