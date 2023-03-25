@@ -25,7 +25,11 @@ https://freemusicarchive.org/genre/Breakcore_-_Hard
     - Manually fetch (note to self: get better browser)
 - Identify songs in HTML:
     - Ctrl + F song title
-    - All songs appear in the following format: ```<a href="https://freemusicarchive.org/music/{AUTHOR}/single/{TITLE_NORMALIZED}/" class="font-bold">{TITLE}</a>``` !1
+    - All songs appear in the following format: 
+        ```
+        <a href="https://freemusicarchive.org/music/{AUTHOR}/single/{TITLE_NORMALIZED}/" class="font-bold">{TITLE}</a>
+        ``` 
+        !1
     
 - Find a way to get download links (Part 1):
     - The link listed above redirects to the song's about page
