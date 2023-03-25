@@ -49,4 +49,10 @@ https://freemusicarchive.org/genre/Breakcore_-_Hard
     - This regex matches all segments like !1: <a href="https://freemusicarchive.org/music/[^\n]*\n[^\n]*\n</a>
     - VSCode doesnt have proper text processing capabilities, and our team is too lazy to learn how to invert a regex (to erase everything except these segments), so programming time
     - => extract_titles.py
-    
+    - at commit b8487a103664b5e1c1aca5d78a479e5345b962e1, the extracted segments amount to way more than the number of songs (approx 500 segments, compared to the 200 songs)
+    - look for another format for songs? ^4
+    - ^4 absolutely, new format starts with: <div class="play-item
+    - of this format, there are exactly 200 segments in the file, and it is also simpler to look for than the previous one (whoops)
+    - slight drawback is it contains a lot more gibberish, but it has the download link out of the box (although escaped)
+    - adjusting programming
+    - => changed regex in extract_titles.py

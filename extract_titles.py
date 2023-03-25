@@ -9,7 +9,7 @@ with open('page/breakcore1.html', 'r') as f:
     content = f.read()
 
     # compile the regex pattern
-    pattern = re.compile(r'<a href="https://freemusicarchive\.org/music/[^\n]*\n[^\n]*\n</a>')
+    pattern = re.compile(r'<div class="play-item[^\n]*')
 
     # search for all matches in the content
     matches = pattern.findall(content)
@@ -19,4 +19,4 @@ with open('page/breakcore1.html', 'r') as f:
 
         # write each match to breakcore1_titles.html
         for match in matches:
-            filtered.write(match)
+            filtered.write(match + '\n')

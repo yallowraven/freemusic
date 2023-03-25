@@ -1,3 +1,4 @@
 - do streams have no desc field?
 - 38:27 i deleted the plain HTML too lmao
 - 39:28 i found out deleting the associated saved folder deletes the HTML too so it was not my fault also wtf
+- 1:10:30 found new and simpler format for song entries in listing (it do be like that sometimes)
