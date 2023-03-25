@@ -76,3 +76,4 @@ https://freemusicarchive.org/genre/Breakcore_-_Hard
     - To automate the metadata fetching and extraction, another piece of software must be employed
     - => extract_song_metadata.py @ COMMIT_NUM
     - the first iteration cannot find the metadata of some songs (probably because they dont have any), these have to be reported and corrected by hand
+    - the simplest method for this is just removing those songs altogether
