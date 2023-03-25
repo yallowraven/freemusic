@@ -3,3 +3,8 @@
 - 39:28 i found out deleting the associated saved folder deletes the HTML too so it was not my fault also wtf
 - 1:10:30 found new and simpler format for song entries in listing (it do be like that sometimes)
 - 1:30:45 sipping water for 42 seconds
+- 1:44:42 urllib.error.HTTPError: HTTP Error 403: Forbidden :(
+- 1:51:00 first successful attempt at starting mass download, expected time until completion: ~8 mins (~1.5 secs/song)
+- 1:59:20 slight hiccup in the system (a song 404-ed), but no matter, skipping and moving on (also underestimated time till compl)
+- new time till compl: ~8 mins
+- 2:04:35 all songs (except one) downloaded (this time i overshot)
