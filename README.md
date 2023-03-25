@@ -60,3 +60,4 @@ https://freemusicarchive.org/genre/Breakcore_-_Hard
     - applying this regex lists all download links in an escaped format
     - unescaping produces functioning links for all songs, making surprisingly quick of this problem, completely cutting out the need for titles (for now at least)
     - => extract_titles.py -> extract_urls.py @ 143bdcc7392c4f032c3986e4a61421343384b60e
+    
