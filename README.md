@@ -18,15 +18,14 @@ https://freemusicarchive.org/genre/Breakcore_-_Hard
 - Acquire all download links
 - Click all download links
 
-### Approach 1:
+### Approach:
 - Download all relevant HTML:
     - Download the listings
     - Set items shown on each page to max (currently 200, page resisted trivial tamperings with max page size)
     - Manually fetch (note to self: get better browser)
 - Identify songs in HTML:
     - Ctrl + F song title
-    - All songs appear in the following format: ```
-    <a href="https://freemusicarchive.org/music/{AUTHOR}/single/{TITLE_NORMALIZED}/" class="font-bold"> 
+    - All songs appear in the following format: ```<a href="https://freemusicarchive.org/music/{AUTHOR}/single/{TITLE_NORMALIZED}/" class="font-bold"> 
     {TITLE}
     </a>``` !1
     
@@ -46,12 +45,12 @@ https://freemusicarchive.org/genre/Breakcore_-_Hard
 
 - Find a way to get download links (Part 2):
     - Strip plain HTML of everything but the normalized song titles
-    - This regex matches all segments like !1: <a href="https://freemusicarchive.org/music/[^\n]*\n[^\n]*\n</a>
+    - This regex matches all segments like !1: ```<a href="https://freemusicarchive.org/music/[^\n]*\n[^\n]*\n</a>```
     - VSCode doesnt have proper text processing capabilities, and our team is too lazy to learn how to invert a regex (to erase everything except these segments), so programming time
     - => extract_titles.py
     - at commit b8487a103664b5e1c1aca5d78a479e5345b962e1, the extracted segments amount to way more than the number of songs (approx 500 segments, compared to the 200 songs)
     - look for another format for songs? ^4
-    - ^4 absolutely, new format starts with: <div class="play-item
+    - ^4 absolutely, new format starts with: ```<div class="play-item```
     - of this format, there are exactly 200 segments in the file, and it is also simpler to look for than the previous one (whoops)
     - slight drawback is it contains a lot more gibberish, but it has the download link out of the box (although escaped)
     - adjusting programming
@@ -77,3 +76,7 @@ https://freemusicarchive.org/genre/Breakcore_-_Hard
     - => extract_song_metadata.py @ COMMIT_NUM
     - the first iteration cannot find the metadata of some songs (probably because they dont have any), these have to be reported and corrected by hand
     - the simplest method for this is just removing those songs altogether
+
+## Wrapping up
+- This journey ended with 568 (hopefully good) quality CC songs
+- My music player of choice will be Windows Media Player (aka Groove Music) until I'm dissatisfied

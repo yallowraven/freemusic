@@ -1,8 +1,8 @@
 import os
 import mutagen
 
-# create a new file for writing the title-author pairs
-with open('songs_meta.txt', 'w') as f:
+# create a new file for writing the title-author pairs in UTF-8 format
+with open('songs_meta.txt', 'w', encoding='utf-8') as f:
 
     # loop through each file in the songs directory
     for filename in os.listdir('songs'):
