@@ -31,8 +31,8 @@ https://freemusicarchive.org/genre/Breakcore_-_Hard
     </a>```
     
 - Find a way to get download links (Part 1):
-    - The link listed above redirect to the song's about page
-    - The format of a download link is: ```https://freemusicarchive.org/track/{TITLE_NORMALIZED}/download/``` !2
+    - The link listed above redirects to the song's about page
+    - The format of a download link (found by attempting a normal user friendly download) is: ```https://freemusicarchive.org/track/{TITLE_NORMALIZED}/download/``` !2
     - !1 !2 Conclusion: no need for all extra webpage data, plain HTML has all ^3
     - How are songs with same title (different authors) disambiguated? ^1 
     - How does normalization work? Is that even relevant, considering we already have an instance of normalized song title, so we don't have to create it ourselves from denormalized string? ^2
@@ -43,3 +43,5 @@ https://freemusicarchive.org/genre/Breakcore_-_Hard
     - weird win explorer bullshittery
     - ^3 to delete additional data, rename the folder so explorer doesnt think its linked to plain HTML anymore (????)
     - ^ result of above: https://imgur.com/a/qQ4rrp5 like damn its hilarious
+
+- Find a way to get download links (Part 2):
