@@ -71,4 +71,8 @@ https://freemusicarchive.org/genre/Breakcore_-_Hard
 - Downloading all songs:
     - Our team invokes ChatGPT for this task **once again**, the language of choice is Python **once again**
     - => download_songs.py @ ed7d0e2621e4ab3e668a1ec6bc08345a4bc180e5
-    
+
+- Addressing attribution (Part 2):
+    - To automate the metadata fetching and extraction, another piece of software must be employed
+    - => extract_song_metadata.py @ COMMIT_NUM
+    - the first iteration cannot find the metadata of some songs (probably because they dont have any), these have to be reported and corrected by hand
