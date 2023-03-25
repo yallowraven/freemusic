@@ -8,3 +8,5 @@
 - 1:59:20 slight hiccup in the system (a song 404-ed), but no matter, skipping and moving on (also underestimated time till compl)
 - new time till compl: ~8 mins
 - 2:04:35 all songs (except one) downloaded (this time i overshot)
+- 2:07:30 orange juice break ~5 mins
+- 2:14:00 back from orange juice break
