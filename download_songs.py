@@ -1,3 +1,5 @@
+# Thx ChatGPT
+
 import os
 import urllib.request
 
