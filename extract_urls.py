@@ -14,9 +14,13 @@ with open('page/breakcore1.html', 'r') as f:
     # search for all matches in the content
     matches = pattern.findall(content)
 
-    # open breakcore1_titles.html for writing
-    with open('breakcore1_titles.html', 'w') as filtered:
+    url_pattern = re.compile(r'https:\\/\\/files.freemusicarchive.org[^&]*')
 
-        # write each match to breakcore1_titles.html
+    # open breakcore1_urls.html for writing
+    with open('breakcore1_urls.html', 'w') as filtered:
+
+        # write each match to breakcore1_urls.html
         for match in matches:
-            filtered.write(match + '\n')
+            url = url_pattern.findall(match)[0]
+            url = url.replace('\/', '/')
+            filtered.write(url + '\n')

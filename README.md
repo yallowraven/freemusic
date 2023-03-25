@@ -56,3 +56,7 @@ https://freemusicarchive.org/genre/Breakcore_-_Hard
     - slight drawback is it contains a lot more gibberish, but it has the download link out of the box (although escaped)
     - adjusting programming
     - => changed regex in extract_titles.py
+    - after forcefully carving off some off the gibberish by hand, found the following pattern: https:\\/\\/files.freemusicarchive.org[^&]
+    - applying this regex lists all download links in an escaped format
+    - unescaping produces functioning links for all songs, making surprisingly quick of this problem, completely cutting out the need for titles (for now at least)
+    - => extract_titles.py -> extract_urls.py
