@@ -2,25 +2,30 @@
 
 import re
 
-# open breakcore1.html for reading
-with open('page/breakcore1.html', 'r') as f:
+def extract_urls(filename):
+    # open file for reading
+    with open(f'page/{filename}.html', 'r') as f:
 
-    # read the contents of breakcore1.html
-    content = f.read()
+        # read the contents of file
+        content = f.read()
 
-    # compile the regex pattern
-    pattern = re.compile(r'<div class="play-item[^\n]*')
+        # compile the regex pattern
+        pattern = re.compile(r'<div class="play-item[^\n]*')
 
-    # search for all matches in the content
-    matches = pattern.findall(content)
+        # search for all matches in the content
+        matches = pattern.findall(content)
 
-    url_pattern = re.compile(r'https:\\/\\/files.freemusicarchive.org[^&]*')
+        url_pattern = re.compile(r'https:\\/\\/files.freemusicarchive.org[^&]*')
 
-    # open breakcore1_urls.html for writing
-    with open('breakcore1_urls.html', 'w') as filtered:
+        # open results file for writing
+        with open(f'{filename}_urls.txt', 'w') as filtered:
 
-        # write each match to breakcore1_urls.html
-        for match in matches:
-            url = url_pattern.findall(match)[0]
-            url = url.replace('\/', '/')
-            filtered.write(url + '\n')
+            # write each match to results file
+            for match in matches:
+                url = url_pattern.findall(match)[0]
+                url = url.replace('\/', '/')
+                filtered.write(url + '\n')
+
+extract_urls('breakcore1')
+extract_urls('breakcore2')
+extract_urls('breakcore3')
