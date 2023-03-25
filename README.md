@@ -26,9 +26,9 @@ https://freemusicarchive.org/genre/Breakcore_-_Hard
 - Identify songs in HTML:
     - Ctrl + F song title
     - All songs appear in the following format: ```
-    <a href="https://freemusicarchive.org/music/{AUTHOR}/single/{TITLE_NORMALIZED}/" class="font-bold"> !1
+    <a href="https://freemusicarchive.org/music/{AUTHOR}/single/{TITLE_NORMALIZED}/" class="font-bold"> 
     {TITLE}
-    </a>```
+    </a>``` !1
     
 - Find a way to get download links (Part 1):
     - The link listed above redirects to the song's about page
@@ -60,4 +60,4 @@ https://freemusicarchive.org/genre/Breakcore_-_Hard
     - applying this regex lists all download links in an escaped format
     - unescaping produces functioning links for all songs, making surprisingly quick of this problem, completely cutting out the need for titles (for now at least)
     - => extract_titles.py -> extract_urls.py @ 143bdcc7392c4f032c3986e4a61421343384b60e
-    
+
